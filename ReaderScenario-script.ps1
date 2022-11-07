@@ -50,6 +50,8 @@ sed -i 's/"$containerappid"/"'"$containerappid"'"/' Dockerfile
 sed -i 's/"$containerappsecret"/"'"$containerappsecret"'"/' Dockerfile
 sed -i 's/"$tenantid"/"'"$tenantid"'"/' Dockerfile
 
+## Client secret= HWg8Q~Uk1VRk0nm_GAdPXPDxmtFRHJssNebO3aJB
+
 ## Create container registry and container image
 az acr create --resource-group $group --location $location --name $acrname --sku Standard
 
